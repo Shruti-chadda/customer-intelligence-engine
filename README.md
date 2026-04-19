@@ -30,8 +30,8 @@
 ```
 customer-segmentation-project/
 │
-├── data.csv           # (Optional) Your transaction dataset
-├── app.py             # Streamlit dashboard (main entry point)
+├── data.csv           # (Optional) Transaction dataset
+├── app.py             # Streamlit dashboard 
 ├── model.py           # ML engine: RFM, KMeans, Churn model
 ├── utils.py           # Campaign generator, decision engine, segment metadata
 ├── requirements.txt   # Python dependencies
@@ -96,18 +96,6 @@ Upload any CSV with these columns (case-insensitive):
 
 ---
 
-## 🌐 Deployment on Render
-
-1. Push code to a GitHub repository
-2. Go to [render.com](https://render.com) → New → Web Service
-3. Connect your GitHub repo
-4. Set:
-   - **Build Command:** `pip install -r requirements.txt`
-   - **Start Command:** `streamlit run app.py --server.port $PORT --server.address 0.0.0.0`
-5. Click **Deploy**
-
----
-
 ## 🧰 Tech Stack
 
 - **Frontend:** Streamlit + Plotly + Custom CSS
@@ -117,23 +105,9 @@ Upload any CSV with these columns (case-insensitive):
 
 ---
 
-## 👨‍💻 For Viva / Presentation
-
-**Problem:** Businesses fail to use transaction data for personalized marketing, treating all customers the same.
-
-**Solution:** InsightEngine automates customer intelligence:
-1. Loads & cleans transaction data
-2. Computes RFM (Recency, Frequency, Monetary) per customer
-3. Scales features with StandardScaler
-4. Applies K-Means clustering with automatic elbow detection
-5. Labels clusters with business-meaningful segment names
-6. Trains Logistic Regression for churn prediction
-7. Decision engine combines segment + churn → actionable strategy
-8. Dynamic campaign generator creates personalized messages
-9. Streamlit dashboard ties everything together in real-time
-
 **Key Insight:** Combining unsupervised learning (clustering) + supervised learning (churn prediction) + rule-based logic (campaign engine) creates a powerful, interpretable business decision system.
 
 ---
 
 *Built with ❤️ using Python, Streamlit, and scikit-learn*
+~ Shruti
